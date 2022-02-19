@@ -194,6 +194,7 @@ h1, h2, h3, p{
     background-position: top;
     background-size: cover ;
     padding-left: 180px;
+    image-rendering: optimizeQuality;
 }
 
 .logo{
@@ -343,20 +344,22 @@ h1, h2, h3, p{
     .navigation{
         position: fixed;
         top: 0;
-        left: 0;
+        left: -240px;
         bottom: 0;
         width: 240px;
+        width: 240p;
+        width: 240p;
         background: #260707;
         flex-direction: column;
         justify-content: flex-start;
         padding-top: 90px;
         text-align: center;
         align-items: stretch;
-        transform: translate(-240px);
+        transform: translateX(0);
         transition: transform 0.3s ease-in-out;
     }
     .navigation_active{
-        transform: translateX(0);
+        transform: translateX(240px);
         z-index: 700;
     }
     .header__hashtag{
